@@ -54,9 +54,10 @@ namespace Pavlo.MyHelpers.Physics
             {
                 normAFC[i] = totalAFC[i].Magnitude;
             }
-            
-            //set true value for frequency 0 Hz (0 index of the signal)
-            normAFC[0] /= 2;
+
+            //decided that the line below was incorrect
+            //normAFC[0] /= 2; //set true value for frequency 0 Hz (0 index of the signal)
+
             //normalization to 1
             if (normalizeAFC)
             {
