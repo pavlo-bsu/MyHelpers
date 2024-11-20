@@ -91,7 +91,7 @@ namespace Pavlo.MyHelpers.Physics
             if (isAddBefore)
                 t0 = times[0] - numberOfZeros * dt;
             else
-                t0 = times[0] + numberOfZeros * dt;
+                t0 = times[0];
 
             for (int i = 0; i < newTimes.Length; i++)
                 newTimes[i] = t0 + i * dt;
